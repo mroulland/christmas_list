@@ -1,0 +1,180 @@
+@font-face {
+    font-family: playlistScript;
+    src: url(Playlist_Script.otf);
+}
+@font-face {
+    font-family: alegreya;
+    src: url(Alegreya-Regular.ttf);
+}
+
+/* Reset */
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #0F0A0F;
+}
+
+/* 1rem = 10px */
+html {
+    font-size: 62.5%;
+    background-color: #E8E5E0;
+}
+
+body {
+    max-width: 1280px;
+    margin: auto;
+    font-family: 'alegreya','Source Sans Pro', sans-serif;
+    font-size: 2rem;
+}
+
+header img{
+    width:100%;
+    max-height:600px;
+}
+
+h2 {
+    font-family: "alegreya";
+    font-size: 4rem;
+    font-weight: 400;
+    color: #B6182F;
+    margin-left: 1rem;
+}
+
+section.count{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+section.count p{
+    font-family: "alegreya";
+    text-align:center;
+    font-size:4rem;
+    line-height: 4rem;
+    color:#B6182F;
+}
+
+section.cards{
+    display: flex;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+section.cards article{
+    position:relative;
+    background-color:#F3EFEC;
+    width:45%;
+    min-height:25rem;
+    margin:1rem;
+    padding:2rem 2rem;
+    box-shadow: #00000025 0.5rem 0.4rem 0.6rem;
+    border-radius: 1.5rem;
+}
+
+section.cards article img.profil{
+    max-width:11rem;
+    border-radius:50%;
+    position:absolute;    
+    top: 1rem;
+    right: 1rem;
+}
+
+section.cards article ul li{
+    list-style-type: none;
+    margin-bottom:1rem;
+    color:#566458;
+}
+
+section.cards article ul li a{
+    vertical-align: text-top;
+    color:#566458;
+}
+
+section.cards article ul li a img{
+    vertical-align: middle;
+}
+
+section.cards article ul li input[type="checkbox"]{
+    display:none;
+}
+
+section.cards article ul li input[type="checkbox"] + label::before{
+    content:'';
+    border:1px solid #B6182F;
+    display: inline-block;
+    margin-right: 1rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+section.cards article ul li input[type="checkbox"]:checked+label::before {
+    background-color: #B6182F;
+}
+
+section.cards article ul li input[type="checkbox"]:checked+label{
+    text-decoration: line-through;
+}
+
+
+section.add_gift{
+    width:95%;
+    background-color: #F3EFEC;
+    padding:2rem;
+    margin:5rem auto;
+    box-shadow: #00000025 0.5rem 0.4rem 0.6rem;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+section.add_gift div{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:2rem;
+}
+
+section.add_gift input, section.add_gift select{
+    padding:.7rem;
+    margin:1rem 0;
+
+}
+
+section.add_gift select option{
+    border-radius: 0%;
+}
+section.add_gift select, section.add_gift input[name="idea"]{
+    width:45%;
+}
+
+section.add_gift input[name="link"]{
+    width:93.5%;
+}
+
+section.add_gift input[type="submit"]{
+    display:block;
+    text-align: center;
+    width:40%;
+    margin:1rem auto;
+}
+
+footer{
+    background-color: #e23637;  
+    padding:2rem;
+    text-align:center;
+}
+
+footer a{
+    color:#fff;
+}
