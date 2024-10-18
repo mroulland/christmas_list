@@ -3,6 +3,10 @@
 ## Description
 Création d'un projet de liste de cadeaux pour environnement famillial ou amical. 
 
+## Utilisation
+Veuillez vous identifier avec l'un des utilisateurs suivants : Paul, Emma, Alice, Lucas, Sophie ou Sam.
+Site : http://christmas.pixelsandcookies.fr/
+
 ## Fonctionnalités
 * Affichage d'une liste de choix par utilisateur
 * Cocher/décocher les cadeaux choisis/achetés
